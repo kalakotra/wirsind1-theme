@@ -37,6 +37,11 @@
 			<div class="col-12 col-lg-6 py-2">
 				$Fields.dataFieldByName(Email).FieldHolder
 			</div>
+			<% if $Fields.dataFieldByName(Password) %>
+				<div class="col-12 col-lg-6 py-2">
+					$Fields.dataFieldByName(Password).FieldHolder
+				</div>
+			<% end_if %>
 			<div class="col-12 col-lg-6 py-2">
 				$Fields.dataFieldByName(Telephone).FieldHolder
 			</div>

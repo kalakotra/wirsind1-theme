@@ -3,11 +3,17 @@
 		<div class="row justify-content-between">
 			<% if $inEdit %>
 				<div class="col-auto py-3">
-					<p>
-						So wird dein Eintrag im EPU-Netzwerk aussehen. Du möchtest noch etwas ändern? Dann gehe einen Schritt zurück!
-						<br />
-						Wenn alles passt, schicke uns die Daten. Wir schauen uns den Eintrag an und stellen ihn online.
-					</p> 
+					<% if getCurrentMember %>
+						<p>
+							So wird dein Eintrag im EPU-Netzwerk aussehen. Du möchtest noch etwas ändern? Dann gehe einen Schritt zurück!
+						</p>
+					<% else %>
+						<p>
+							So wird dein Eintrag im EPU-Netzwerk aussehen. Du möchtest noch etwas ändern? Dann gehe einen Schritt zurück!
+							<br />
+							Wenn alles passt, schicke uns die Daten. Wir schauen uns den Eintrag an und stellen ihn online.
+						</p>
+					<% end_if %>
 				</div>
 			<% else %>
 				<div class="col-auto py-3">
@@ -108,10 +114,16 @@
 				</div>
 			<% end_if %>
 
-			<% if $inEdit %>
+			<% if getCurrentMember %>
 				<div class="col-12 py-3 py-lg-5 text-center">
-					<a href="$Link" class="btn btn-secondary mx-2">Zurück</a> <a href="{$Link}finishAddingProfile/" class="btn btn-dark mx-2 text-white">Absenden</a>
+					<a href="$Link" class="btn btn-secondary mx-2">Zurück</a>
 				</div>
+			<% else %>
+				<% if $inEdit %>
+					<div class="col-12 py-3 py-lg-5 text-center">
+						<a href="$Link" class="btn btn-secondary mx-2">Zurück</a> <a href="{$Link}finishAddingProfile/" class="btn btn-dark mx-2 text-white">Absenden</a>
+					</div>
+				<% end_if %>
 			<% end_if %>
 		</div>
 	</div>

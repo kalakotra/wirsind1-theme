@@ -14,5 +14,11 @@
 		<li class="nav-item">
 			<a href="https://www.youtube.com/@wirsind1-ein-personen-unte450/videos" class="nav-link px-2" target="_blank" rel="noopener" ><i class="fab fa-youtube fa-lg"></i><span class="visually-hidden">Youtube</span></a>
 		</li>
+		<% if getCurrentMember %>
+			
+			<li class="nav-item">
+				<a href="/epu-netzwerk/profil" class="nav-link px-2" ><i class="fas fa-user-edit"></i><span class="visually-hidden">Edit Profile</span></a>
+			</li>
+		<% end_if %>
 	</ul>
 </nav>

@@ -13,6 +13,11 @@
 <main class="bg-light">
 	<div class="container py-3 py-lg-5">
 		<div class="row justify-content-center">
+			<% if getCurrentMember %><% else %>
+				<div class="col-12 col-lg-10 py-3">
+					Wenn Sie ein Profil haben, können Sie sich <a href="/Security/login?BackURL=/epu-netzwerk/profil">hier</a> anmelden. 
+				</div>
+			<% end_if %>
 			<div class="col-12 col-lg-10 py-3">
 				$ProfileForm
 			</div>

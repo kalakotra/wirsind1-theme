@@ -209,6 +209,7 @@ form * {
 
 form input[type=text],
 form input[type=email],
+form input[type=password],
 form select,
 form textarea {
 	border-radius: 50rem;

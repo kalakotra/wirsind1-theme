@@ -1,7 +1,7 @@
 <header class="sticky-top shadow bg-white">
 	<div class="container">
 		<div class="row justify-content-between py-3 align-items-center">
-			<div class="col-9 col-lg-6 ">
+			<div class="col-9 col-lg-5 ">
 				<div class="row align-items-center">
 					<div class="col-auto order-1">
 						<a href="home/"><img src="$themedResourceURL('/images/logo.png')" alt="Logo" class="logo" width="1374" height="374" /></a>
@@ -14,7 +14,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="col col-lg-6 align-self-center d-none d-lg-block">
+            <div class="col col-lg-7 align-self-center d-none d-lg-block">
                 <% include Navigation %>
             </div>
 			<div class="col-3 d-lg-none align-self-center text-right">
